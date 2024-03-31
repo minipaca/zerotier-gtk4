@@ -73,6 +73,7 @@
 	(gtk-text-buffer-set-text text-buffer text -1)
 	(gtk-text-view-set-buffer text-view text-buffer)
 	;;
+	(gtk-window-set-icon-name window app-name)
 	(gtk-window-set-title window app-name)
 	(gtk-window-set-child window grid)
 	;;

@@ -1,5 +1,5 @@
 (("package" . "zerotier-gtk4")
- ("version" . "1.0.0")
+ ("version" . "1.0.1")
  ("release" . "1")
  ("section" . "utils")
  ("priority" . "optional")
