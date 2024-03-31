@@ -2,7 +2,5 @@
  ("Stop Zerotier" . "停止 Zerotier")
  ("Starting zerotier-one.service" . "正在启动 zerotier-one.service")
  ("Stopping zerotier-one.service" . "正在停止 zerotier-one.service")
- (" is running" . " 正在运行中")
- (" is not running" . " 没有运行")
  (" is enabled" . " 已经启用了")
  (" is disabled" . " 已经停用了"))

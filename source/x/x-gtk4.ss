@@ -18,13 +18,6 @@
 				 (cdr (f-e "app-version"))))
 	    (text-view (gtk-text-view-new)))
 	;;
-	(define systemctl-running?
-	  (lambda ()
-	    (let* ((command "systemctl is-system-running")
-		   (port (car (process command)))
-		   (str (get-string-all port)))
-	      (string=? str "running\n"))))
-	;;
 	(define service-active?
 	  (lambda (service)
 	    (let* ((command (string-append "systemctl is-active " service))
@@ -55,13 +48,6 @@
 		  (begin
 		    (set! text (string-append text " [OK]"))		    
 		    (gtk-text-buffer-set-text text-buffer text -1))))))
-	;;
-	(let ((t "systemctl system"))
-	  (if (systemctl-running?)
-	      (set! text (string-append text "\n" t
-					(cdr (f-t " is running"))))
-	      (set! text (string-append text "\n" t
-					(cdr (f-t " is not running"))))))
 	;;
 	(let ((service "zerotier-one.service"))
 	  (if (service-active? service)
@@ -98,4 +84,5 @@
 	(g-application-run app 0 0)
 	(g-object-unref app)))
     ;;
-    (main)))
+    (main)
+    ""))
