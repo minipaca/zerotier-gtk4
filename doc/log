@@ -3,4 +3,4 @@
 20240331 Support icon
 20240331 Do not show "systemctl running" on startup 
 20240331 Publish version 1.0.1
-
+20240401 distro/all.datum.ss: Change content of section to Network
