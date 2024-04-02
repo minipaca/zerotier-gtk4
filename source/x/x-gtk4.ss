@@ -73,6 +73,7 @@
 	(gtk-window-set-icon-name window app-name)
 	(gtk-window-set-title window app-name)
 	(gtk-window-set-child window cbox)
+	(gtk-window-set-resizable window 0)
 	;;
 	(g-signal-connect-object button1 "clicked"
 				 (g-callback start-zerotier-service) 0 0)
