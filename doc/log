@@ -5,3 +5,4 @@
 20240331 Publish version 1.0.1
 20240401 distro/all.datum.ss: Change content of section to Network
 20240402 x-gtk4: Keep widgets centered
+20240402 x-gtk4: Set text-view not editable
